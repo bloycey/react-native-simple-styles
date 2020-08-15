@@ -1,0 +1,28 @@
+{
+	"name": "react-native-simple-styles",
+	"version": "1.0.3",
+	"description": "Let's not reinvent the wheel. A stylesheet based CSS solution for React Native.",
+	"main": "index.js",
+	"scripts": {
+		"test": "echo \"Error: no test specified\" && exit 1",
+		"build": "./node_modules/.bin/babel src --out-file index.js"
+	},
+	"author": "",
+	"license": "ISC",
+	"peerDependencies": {
+		"react": "^16.13.1",
+		"react-native": "^0.63.2"
+	},
+	"repository": {
+		"type": "git",
+		"url": "https://github.com/bloycey/react-native-simple-styles"
+	},
+	"devDependencies": {
+		"@babel/cli": "^7.10.5",
+		"@babel/core": "^7.11.1",
+		"@babel/preset-env": "^7.11.0",
+		"@babel/preset-react": "^7.10.4",
+		"react": "^16.13.1",
+		"react-native": "^0.63.2"
+	}
+}
