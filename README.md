@@ -43,7 +43,7 @@ const styles = {
 export default styles;
 ```
 
-In your components you will need to import the reactNativeSimpleStyles function, and then use the pass in your stylesheet. All of the standard React Native core components will be returned that you can use as normal. The only difference is that they now accept a `className` prop that your classNames to.
+In your components you will need to import the reactNativeSimpleStyles function, and then use the pass in your stylesheet. All of the [standard React Native core components](https://reactnative.dev/docs/components-and-apis) will be returned that you can use as normal. The only difference is that they now accept a `className` prop that your classNames to.
 
 ```
 import reactNativeSimpleStyles from "react-native-simple-styles";
