@@ -1,4 +1,6 @@
-# React Native Simple Styles
+# React Native Simple Styles [![npm version](http://img.shields.io/npm/v/react-native-simple-styles.svg?style=flat)](https://npmjs.org/package/react-native-simple-styles "View this project on npm") [![npm version](http://img.shields.io/npm/l/react-native-simple-styles.svg?style=flat)](https://npmjs.org/package/react-native-simple-styles "View this project on npm")
+
+
 
 Not everyone wants to write scoped CSS. This package allows you to write CSS that:
 
