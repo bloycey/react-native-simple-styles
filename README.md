@@ -71,7 +71,7 @@ You can also mix and match classNames and inline styles and it will work fine.
 
 Under the hood reactNativeSimpleStyles is simply a higher order compnent that wraps the regular react native components.
 
-This HOC uses React Native's `StyleSheet` component along with your stylesheet to find your styles and abstracts away the manual process of creating a `StyleSheet` for each component. But since the `StyleSheet` component is used under the hood you still get the same performance benefits (as compared to simply using inline styles, for example)
+This HOC uses React Native's `StyleSheet` component along with your stylesheet to find your styles and abstracts away the manual process of creating a `StyleSheet` for each component. Since the `StyleSheet` component is used under the hood you still get the same performance benefits (as compared to simply using inline styles, for example)
 
 ## Disclaimers & Contributions
 
