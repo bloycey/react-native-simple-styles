@@ -1,6 +1,6 @@
 {
 	"name": "react-native-simple-styles",
-	"version": "1.0.5",
+	"version": "1.0.6",
 	"description": "Let's not reinvent the wheel. A stylesheet based CSS solution for React Native.",
 	"main": "index.js",
 	"scripts": {
