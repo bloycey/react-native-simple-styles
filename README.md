@@ -1,7 +1,6 @@
 # React Native Simple Styles [![npm version](http://img.shields.io/npm/v/react-native-simple-styles.svg?style=flat)](https://npmjs.org/package/react-native-simple-styles "View this project on npm") [![npm version](http://img.shields.io/npm/l/react-native-simple-styles.svg?style=flat)](https://npmjs.org/package/react-native-simple-styles "View this project on npm")
 
 
-
 Not everyone wants to write scoped CSS. This package allows you to write CSS that:
 
 -   All lives in the one file;
@@ -12,11 +11,12 @@ Not everyone wants to write scoped CSS. This package allows you to write CSS tha
 
 ## Usage
 
-Write your CSS in a single `style.js` file. Use standard CSS-in-JS object format. You can organise your CSS however you like. E.g.
+Write your CSS in a single `style.js` file and also import the `react-native-simple-styles` npm package here. You should also make sure to export the `react-native-simple-styles` package from here using whatever name you like (this will make your life easier with importing later!). Use standard CSS-in-JS object format. You can organise your CSS however you like. E.g.
 
 ```
 // styles.js
 
+import reactNativeSimpleStyles from "react-native-simple-styles";
 
 const headings = {
 	h1: { fontSize: 56 },
@@ -29,7 +29,7 @@ const textUtilities = {
 	italic: { fontStyles: 'italic'}
 }
 
-const styles = {
+export const styles = {
 	centerAll: {
 		display: 'flex',
 		alignItems: 'center',
@@ -42,15 +42,14 @@ const styles = {
 	...textUtilities,
 }
 
-export default styles;
+export const simpleStyles = reactNativeSimpleStyles;
 ```
 
-In your components you will need to import the reactNativeSimpleStyles function, and then use the pass in your stylesheet. All of the [standard React Native core components](https://reactnative.dev/docs/components-and-apis) will be returned that you can use as normal. The only difference is that they now accept a `className` prop that your classNames to.
+In your components pass in your stylesheet to the `react-native-simple-styles` function you exported from `style.js`.  All of the [standard React Native core components](https://reactnative.dev/docs/components-and-apis) will be returned that you can use as normal. The only difference is that they now accept a `className` prop that your classNames to.
 
 ```
-import reactNativeSimpleStyles from "react-native-simple-styles";
-import styles from "./styles/style";
-const { View, Text } = reactNativeSimpleStyles(styles);
+import { styles, simpleStyles) from "./styles/style";
+const { View, Text } = simpleStyles(styles);
 
 const Example = () => (
 	<View className="centerAll hScreen">
